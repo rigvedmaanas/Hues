@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Hues</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1366 height=768 style="width: 1366px; height: 768px; background: #01506C"></canvas>
+    <script src="Build/Hues.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Hues.data.br",
+        frameworkUrl: "Build/Hues.framework.js.br",
+        codeUrl: "Build/Hues.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Rigved Maanas",
+        productName: "Hues",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
